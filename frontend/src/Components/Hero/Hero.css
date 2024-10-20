@@ -1,0 +1,62 @@
+/* Responsive Hero Section */
+.hero {
+    min-height: 87vh; /* Allows it to scale dynamically while maintaining at least 87vh */
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive Images */
+.hero img {
+    width: 100%; /* Full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+    object-fit: cover; /* Ensures images are cropped nicely */
+    border-radius: 10px; /* Optional rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for the images */
+.hero img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 15px;
+    }
+
+    .hero img {
+        margin-bottom: 15px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .hero {
+        padding: 10px;
+    }
+
+    .hero img {
+        margin-bottom: 10px;
+    }
+}
+
+/* For Small Mobile Screens */
+@media (max-width: 480px) {
+    .hero {
+        padding: 5px;
+    }
+
+    .hero img {
+        margin-bottom: 8px;
+    }
+}

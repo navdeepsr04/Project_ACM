@@ -1,0 +1,151 @@
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo img {
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Menu Links */
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #000000;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    color: #000000; /* Change to a different color on hover */
+    transform: scale(1.04);
+}
+
+/* Login, Wishlist, Cart */
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+}
+
+.nav-login-cart button {
+    margin-right: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-login-cart img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-cart-count {
+    background-color: #ff6347;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-login-cart {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+        background-color: white;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu li a {
+        font-size: 18px;
+    }
+
+    .nav-login-cart {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .nav-login-cart button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo img {
+        height: 40px;
+    }
+
+    .nav-login-cart button {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .nav-login-cart img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-cart-count {
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        font-size: 10px;
+    }
+}

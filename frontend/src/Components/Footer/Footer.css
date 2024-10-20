@@ -1,0 +1,135 @@
+/* Footer Container */
+.footer {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 60px;
+}
+
+.footer-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Links Section */
+.footer-about {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons Section */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-social img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Footer Copyright Section */
+.footer hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .footer-logo {
+        flex-direction: column;
+    }
+
+    .footer-logo img {
+        height: 50px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links li {
+        font-size: 14px;
+    }
+
+    .footer-social {
+        gap: 10px;
+    }
+}
+
+/* For Small Mobile Screens */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-logo img {
+        height: 40px;
+    }
+
+    .footer-links li {
+        font-size: 12px;
+    }
+
+    .footer-social img {
+        width: 25px;
+    }
+}

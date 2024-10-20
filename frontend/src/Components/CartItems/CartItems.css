@@ -1,0 +1,128 @@
+.cartitems {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cartitems-product-icon {
+    width: 70px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cartitems-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cartitems-total button{
+    background-color: black;
+    color: #ffffff;
+    height: 50px;
+    width: 200px;
+}
+
+.space {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* .cartitems-format-main p:nth-child(4), .cartitems-format p:nth-child(4),
+    .cartitems-format-main p:nth-child(5), .cartitems-format p:nth-child(5) {
+        display: none;
+    } */
+
+    .cartitems-remove-icon {
+        width: 25px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: repeat(2, 1fr); /* Further reduce columns */
+        text-align: left;
+    }
+
+    .cartitems-format img {
+        grid-column: 1 / -1; /* Make the image span full width */
+    }
+
+    .cartitems-format p {
+        grid-column: 1 / -1; /* Make the name and price take up the full width */
+        margin-bottom: 5px;
+    }
+
+    .cartitems-remove-icon {
+        grid-column: 1 / -1; /* Make the remove icon span full width */
+        margin: 10px auto;
+    }
+
+    .cartitems-total {
+        padding: 20px;
+    }
+
+    .cartitems-total-items {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .cartitems-down button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #000;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .cartitems-down button:hover {
+        background-color: #333;
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr; /* Stack all content vertically */
+        text-align: center;
+    }
+
+    .cartitems-format img {
+        margin-bottom: 10px;
+    }
+
+    .cartitems-total h1, .cartitems-total-items h3, .cartitems-total-items p {
+        font-size: 1.2rem;
+    }
+
+    .cartitems-total {
+        padding: 10px;
+    }
+}

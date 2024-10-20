@@ -1,0 +1,47 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signup p{
+    font-size: xx-large;
+    font-family: monospace;
+    margin-top: 90px;
+}
+.signup hr{
+    width: 20vw;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.signup-usr-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.signup-usr-pass input{
+    width: 200px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.signup-usr-pass button{
+    color: white;
+    background-color: black;
+    height: 40px;
+    border: 1px solid white;
+    width: 100px;
+}
+.signup-usr-pass button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.signup-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}

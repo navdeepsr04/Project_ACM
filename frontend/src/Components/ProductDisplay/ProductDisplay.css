@@ -1,0 +1,125 @@
+.pd {
+    display: flex;
+    margin: 0px 170px;
+    gap: 20px;
+}
+
+.pd-left {
+    display: flex;
+    gap: 15px;
+}
+
+.pd-left-imglist {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+}
+
+.pd-right {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.pd-right-price {
+    margin: 35px 0px;
+}
+
+.pd-right-old-price {
+    text-decoration: line-through;
+}
+
+.pd-right-select-size p {
+    font-weight: 600;
+}
+
+.pd-right-size {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.pd-right-size div {
+    padding: 5px 12px;
+    margin: 7px 0px;
+    cursor: pointer;
+    border: 1px solid #a5a5a5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pd-right-size div:hover {
+    background-color: black;
+    color: white;
+}
+
+.pd-right button {
+    padding: 10px 0px;
+    margin: 15px 0px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pd-right button:hover {
+    transform: scale(1.01);
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .pd {
+        flex-direction: column;
+        margin: 0px 50px;
+        gap: 20px;
+    }
+    .pd-left-imglist {
+        grid-template-columns: 1fr 1fr;
+    }
+    .pd-right {
+        margin: 15px 0px;
+    }
+    .pd-right-size {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .pd {
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .pd-left {
+        flex-direction: column;
+    }
+    .pd-left-imglist {
+        grid-template-columns: 1fr;
+    }
+    .pd-right-size {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .pd-right button {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pd{
+        margin: 0px 10px;
+    }
+    .pd-left-imglist {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .pd-right-size div {
+        padding: 5px;
+        margin: 5px 0px;
+    }
+    .pd-right button {
+        padding: 10px;
+        width: 100%;
+    }
+}

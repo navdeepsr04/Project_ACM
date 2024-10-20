@@ -1,0 +1,46 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login p{
+    margin-top: 90px;
+    font-size: xx-large;
+    font-family: monospace;
+}
+.login hr{
+    width: 20vw;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.login-usr-pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.login-usr-pass input{
+    width: 200px;
+    margin-bottom: 40px;
+    height: 30px;
+    /* border-radius: 40px; */
+}
+.login-usr-pass button{
+    color: white;
+    background-color: black;
+    height: 40px;
+    border: 1px solid white;
+    width: 100px;
+}
+.login-usr-pass button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.login-forgot-signup{
+    display: flex;
+    gap: 40px;
+}

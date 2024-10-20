@@ -1,0 +1,122 @@
+/* Popular Section */
+.popular {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.popular h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.popular hr {
+    width: 80px;
+    height: 4px;
+    background-color: #000000;
+    margin: 20px auto;
+    border: none;
+}
+
+.popular-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.popular-items .item {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.popular-items .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+}
+
+.popular-items .item:hover {
+    transform: scale(1.05);
+}
+
+.popular-items .item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.popular-items .item .price {
+    font-size: 1rem;
+    color: #999;
+}
+
+.popular-items .item .new-price {
+    font-size: 1.2rem;
+    color: #e60000;
+    font-weight: bold;
+}
+
+.popular-items .item .old-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #999;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .popular h1 {
+        font-size: 1.8rem;
+    }
+
+    .popular-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .popular-items .item {
+        padding: 15px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .popular {
+        padding: 20px 10px;
+    }
+
+    .popular h1 {
+        font-size: 1.6rem;
+    }
+
+    .popular-items {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 10px;
+    }
+
+    .popular-items .item {
+        padding: 10px;
+    }
+}
+
+/* For Small Mobile Screens */
+@media (max-width: 480px) {
+    .popular h1 {
+        font-size: 1.4rem;
+    }
+
+    .popular-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    .popular-items .item {
+        padding: 8px;
+    }
+}
