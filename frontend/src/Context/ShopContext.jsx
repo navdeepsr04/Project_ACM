@@ -14,7 +14,6 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
-    // Log cartItems when it changes
     useEffect(() => {
         console.log(cartItems);
     }, [cartItems]);

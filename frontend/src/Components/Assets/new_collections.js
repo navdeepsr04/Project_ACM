@@ -10,7 +10,7 @@ import p8_img from "./product_28.png";
 let new_collections = [
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women classic fashioned tops",
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
@@ -19,8 +19,8 @@ let new_collections = [
     id: 35,
     name: "Boys Orange Colourblocked Hooded Sweatshirt",
     image: p2_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 999,
+    old_price: 1200,
   },
   {
     id: 14,
@@ -31,7 +31,7 @@ let new_collections = [
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women classic fashioned tops",
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
@@ -45,10 +45,10 @@ let new_collections = [
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Women classic fashioned tops",
     image: p6_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 999,
+    old_price: 1200,
   },
   {
     id: 17,
